@@ -3,6 +3,6 @@ coveralls==3.2.0
 fakeredis==1.6.1
 lxml==4.6.3
 pytest==6.2.5
-pytest-bdd==4.1.0
+pytest-bdd==5.0.0
 pytest-cov==2.12.1
 requests-mock==1.9.3
