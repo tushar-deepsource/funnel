@@ -46,7 +46,7 @@ requests==2.26.0
 rq==1.10.0
 SQLAlchemy==1.4.26
 SQLAlchemy-Utils==0.37.9
-tweepy==4.0.0
+tweepy==4.2.0
 twilio==7.0.0
 typing-extensions==3.10.0.2
 url-normalize==1.4.3
