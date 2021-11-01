@@ -23,7 +23,7 @@ Flask-SQLAlchemy==2.5.1
 Flask-WTF==0.15.1
 geoip2==4.4.0
 html2text==2020.1.16
-icalendar==4.0.7
+icalendar==4.0.9
 idna>=2.5
 itsdangerous==2.0.1
 jsmin==3.0.0
