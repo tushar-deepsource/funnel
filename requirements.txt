@@ -39,7 +39,7 @@ pycountry==20.7.3
 pyIsEmail==1.4.0
 pymdown-extensions==9.0
 python-dateutil==2.8.2
-pytz==2021.1
+pytz==2021.3
 PyVimeo==1.1.0
 qrcode==7.3
 requests==2.26.0
