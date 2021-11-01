@@ -44,7 +44,7 @@ PyVimeo==1.1.0
 qrcode==7.3.1
 requests==2.26.0
 rq==1.10.0
-SQLAlchemy==1.4.25
+SQLAlchemy==1.4.26
 SQLAlchemy-Utils==0.37.8
 tweepy==4.0.0
 twilio==7.0.0
