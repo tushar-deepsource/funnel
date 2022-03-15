@@ -7,7 +7,7 @@ from baseframe.forms.sqlalchemy import AvailableName, QuerySelectField
 from coaster.utils import sorted_timezones, utcnow
 import baseframe.forms as forms
 
-from ..models import Project, Rsvp, SavedProject, Profile
+from ..models import Profile, Project, Rsvp, SavedProject
 from .helpers import image_url_validator, nullable_strip_filters
 
 __all__ = [
@@ -243,7 +243,7 @@ class ProjectTransitionForm(forms.Form):
 
 @Project.forms('cfp_transition')
 class ProjectCfpTransitionForm(forms.Form):
-    open = forms.BooleanField(  # noqa: A003
+    open = forms.BooleanField(
         __("Open submissions"), validators=[forms.validators.InputRequired()]
     )
 
@@ -270,17 +270,17 @@ class AddSponsorForm(forms.Form):
     )
     label = forms.StringField(
         __("Label"),
-        description=__(
-            "Optional – Label to indicate the type of sponsor"
-        ),
+        description=__("Optional – Label to indicate the type of sponsor"),
         filters=[forms.filters.strip()],
     )
-    is_promoted = forms.BooleanField(  # noqa: A003
+    is_promoted = forms.BooleanField(
         __("Is promoted"), validators=[forms.validators.InputRequired()]
     )
 
     def set_queries(self):
-        self.profile.query = Profile.query.filter(Profile.state.ACTIVE_AND_PUBLIC, Profile.organization_id.is_not(None)).all()
+        self.profile.query = Profile.query.filter(
+            Profile.state.ACTIVE_AND_PUBLIC, Profile.organization_id.is_not(None)
+        ).all()
 
 
 @SavedProject.forms('main')

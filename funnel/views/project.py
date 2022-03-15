@@ -1,4 +1,3 @@
-
 from collections import namedtuple
 from types import SimpleNamespace
 import csv
@@ -35,6 +34,7 @@ from coaster.views import (
 
 from .. import app
 from ..forms import (
+    AddSponsorForm,
     CfpForm,
     ProjectBannerForm,
     ProjectBoxofficeForm,
@@ -42,7 +42,6 @@ from ..forms import (
     ProjectLivestreamForm,
     ProjectNameForm,
     ProjectTransitionForm,
-    AddSponsorForm,
 )
 from ..models import (
     RSVP_STATUS,
