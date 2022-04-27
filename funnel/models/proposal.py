@@ -102,7 +102,6 @@ class PROPOSAL_STATE(LabeledEnum):  # noqa: N801
         UNDER_EVALUATION,
     }
     UNDO_TO_SUBMITTED = {AWAITING_DETAILS, UNDER_EVALUATION, REJECTED}
-    # SHORLISTABLE = {SUBMITTED, AWAITING_DETAILS, UNDER_EVALUATION}
 
 
 # --- Models ------------------------------------------------------------------

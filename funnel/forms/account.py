@@ -438,14 +438,6 @@ class NewPhoneForm(forms.RecaptchaForm):
     # Temporarily removed since we only support mobile numbers at this time. When phone
     # call validation is added, we can ask for other types of numbers:
 
-    # type = forms.RadioField(__("Type"),
-    #     validators=[forms.validators.Optional()],
-    #     filters=strip_filters,
-    #     choices=[
-    #         (__("Mobile"), __("Mobile")),
-    #         (__("Home"), __("Home")),
-    #         (__("Work"), __("Work")),
-    #         (__("Other"), __("Other"))])
 
     enable_notifications = forms.BooleanField(
         __("Send notifications by SMS"),

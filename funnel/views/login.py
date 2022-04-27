@@ -608,22 +608,6 @@ def hasjob_login(cookietest=False):
 
 # Retained for future hasjob integration
 
-# @app.route('/login/hasjob')
-# @requires_login_no_message  # 1. Ensure user login
-# @requestargs('code')
-# def login_hasjob(code):
-#     # 2. Verify signature of code
-#     try:
-#         request_code = crossapp_serializer().loads(code)
-#     except itsdangerous.BadData:
-#         current_app.logger.warning("hasjobapp login code is bad: %s", code)
-#         return redirect(url_for('index'))
-#     # 3. Create token
-#     token = crossapp_serializer().dumps(
-#         {'nonce': request_code['nonce'], 'sessionid': current_auth.session.buid}
-#     )
-#     # 4. Redirect user
-#     return redirect(app_url_for(hasjobapp, 'login_callback', token=token))
 
 
 # Retained for future hasjob integration
